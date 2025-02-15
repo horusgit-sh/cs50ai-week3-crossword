@@ -185,7 +185,7 @@ class CrosswordCreator():
         """
 
         # If no arcs, start with queue of all arcs:
-        if not arcs:
+        if arcs is None:
             arcs = []
             for var_1 in self.domains:
                 for var_2 in self.domains:
